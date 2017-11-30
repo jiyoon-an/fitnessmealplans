@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/layoutBreakfast">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="4dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Breakfast"
+                            android:id="@+id/tvBreakfastTitle" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:layout_gravity="right" >
+
+                        <ImageButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/btnBreakfast"
+                            android:src="@drawable/add"
+                            android:layout_gravity="right"
+                            android:onClick="onAddBreakfastClicked"
+                            android:background="#00000000"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:layout_gravity="bottom">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/ivBreakfast"
+                            android:src="@drawable/menu" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/tvBreakfast1"
+                                android:layout_weight="0.9" />
+
+                            <ImageButton
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnDeleteFirstBreakfast"
+                                android:layout_weight="0.1"
+                                android:src="@android:drawable/presence_offline"
+                                android:background="#00000000"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/tvBreakfast2"
+                                android:layout_weight="0.9" />
+
+                            <ImageButton
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnDeleteSecondBreakfast"
+                                android:layout_weight="0.1"
+                                android:src="@android:drawable/presence_offline"
+                                android:background="#00000000"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/tvBreakfast3"
+                                android:layout_weight="0.9" />
+
+                            <ImageButton
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnDeleteThirdBreakfast"
+                                android:layout_weight="0.1"
+                                android:src="@android:drawable/presence_offline"
+                                android:background="#00000000"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/layoutLunch">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="4dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Lunch"
+                            android:id="@+id/tvLunchTitle" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:layout_gravity="right">
+
+                        <ImageButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/btnLunch"
+                            android:src="@drawable/add"
+                            android:layout_gravity="right"
+                            android:onClick="onAddLunchClicked"
+                            android:background="#00000000"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:layout_gravity="bottom">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/ivLunch"
+                            android:src="@drawable/menu" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvLunch1"
+                                android:layout_weight="0.9" />
+
+                            <ImageButton
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnDeleteFirstLunch"
+                                android:layout_weight="0.1"
+                                android:src="@android:drawable/presence_offline"
+                                android:background="#00000000"
+                                android:adjustViewBounds="true"
+                                android:layout_gravity="center_vertical"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvLunch2"
+                                android:layout_weight="0.9" />
+
+                            <ImageButton
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnDeleteSecondLunch"
+                                android:layout_weight="0.1"
+                                android:src="@android:drawable/presence_offline"
+                                android:background="#00000000"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvLunch3"
+                                android:layout_weight="0.9" />
+
+                            <ImageButton
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnDeleteThirdLunch"
+                                android:layout_weight="0.1"
+                                android:src="@android:drawable/presence_offline"
+                                android:background="#00000000"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/layoutDinner">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="4dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Dinner"
+                            android:id="@+id/tvDinnerTitle" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:layout_gravity="right" >
+
+                        <ImageButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/btnDinner"
+                            android:src="@drawable/add"
+                            android:layout_gravity="right"
+                            android:onClick="onAddDinnerClicked"
+                            android:background="#00000000"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/ivDinner"
+                            android:src="@drawable/menu" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvDinner1"
+                                android:layout_weight="0.9" />
+
+                            <ImageButton
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnDeleteFirstDinner"
+                                android:layout_weight="0.1"
+                                android:src="@android:drawable/presence_offline"
+                                android:background="#00000000"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvDinner2"
+                                android:layout_weight="0.9" />
+
+                            <ImageButton
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnDeleteSecondDinner"
+                                android:layout_weight="0.1"
+                                android:src="@android:drawable/presence_offline"
+                                android:background="#00000000"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvDinner3"
+                                android:layout_weight="0.9" />
+
+                            <ImageButton
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnDeleteThirdDinner"
+                                android:layout_weight="0.1"
+                                android:src="@android:drawable/presence_offline"
+                                android:background="#00000000"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Total Calories"
+                    android:id="@+id/tvTtlCalTitle"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTotalCalories"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:textIsSelectable="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="kcal"
+                    android:id="@+id/textView2"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

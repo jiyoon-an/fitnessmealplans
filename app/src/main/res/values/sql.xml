@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="createTableUser">
+        CREATE TABLE USER
+        (
+            USER_ID      TEXT PRIMARY KEY NOT NULL,
+            USER_PW      TEXT        NOT NULL,
+            TYPE_ID      CHAR(2)     NOT NULL,
+            AGE          INTEGER,
+            HEIGHT       REAL,
+            HEIGHT_CD    CHAR(2),
+            WEIGHT       REAL,
+            WEIGHT_CD    CHAR(2),
+            SEXCD        CHAR(1),
+            EXERCISE     CHAR(2),
+            CALDAILYCAL  INTEGER
+        );
+    </string>
+
+    <string name="dropTableUser">
+        DROP TABLE IF EXISTS USER;
+    </string>
+
+    <string name ="selectUser">
+        SELECT   USER_ID
+                ,TYPE_ID
+                ,AGE
+                ,HEIGHT
+                ,HEIGHT_CD
+                ,WEIGHT
+                ,WEIGHT_CD
+                ,SEXCD
+                ,EXERCISE
+                ,CALDAILYCAL
+        FROM   USER
+        WHERE  USER_ID = "'%1$s'";
+    </string>
+
+
+    <string name ="deleteUser">
+        DELETE FROM USER
+        WHERE  USER_ID = "'%1$s'";
+    </string>
+
+    <string name ="loginUser">
+        SELECT   USER_ID
+                ,USER_PW
+        FROM   USER
+        WHERE  USER_ID = "'%1$s'";
+    </string>
+
+    <string name ="userCount">
+        SELECT  COUNT(*)
+        FROM   USER
+        WHERE  USER_ID = "'%1$s'";
+    </string>
+
+
+
+</resources>

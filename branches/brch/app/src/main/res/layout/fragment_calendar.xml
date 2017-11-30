@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/btnPrevious"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/previous" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="May 2016"
+                    android:textSize="20sp"
+                    android:id="@+id/tvCalendarTitle"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/next" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:weightSum="1"
+            android:layout_marginLeft="10dp">
+
+            <GridView
+                android:id="@+id/gvCalandarView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:numColumns="7"
+                android:stretchMode="columnWidth"
+                android:listSelector="@drawable/selector"
+                android:layout_below="@+id/tvCalendarTitle"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:verticalSpacing="10dp"
+                android:layout_weight="0.93" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

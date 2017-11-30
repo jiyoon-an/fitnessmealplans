@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="left|center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Menu Name"
+                    android:id="@+id/tvNameTitle"
+                    android:width="160dp"
+                    android:gravity="center_vertical"
+                    android:background="#f1f1f1"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/tvName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Amount"
+                    android:id="@+id/tvAmountTitle"
+                    android:width="160dp"
+                    android:gravity="center_vertical"
+                    android:background="#f1f1f1"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAmount" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Menu Calories"
+                    android:id="@+id/tvCaloryTitle"
+                    android:width="160dp"
+                    android:gravity="center_vertical"
+                    android:background="#f1f1f1"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/tvCalory" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Menu Type"
+                    android:id="@+id/tvTypeTitle"
+                    android:width="160dp"
+                    android:gravity="center_vertical"
+                    android:background="#f1f1f1"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spType" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Menu Category"
+                    android:id="@+id/tvCategoryTitle"
+                    android:width="160dp"
+                    android:gravity="center_vertical"
+                    android:background="#f1f1f1"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spCategory"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add My Menu"
+                    android:id="@+id/btnAddMyMenu"
+                    android:onClick="onAddMyMenuClicked"
+                    android:background="@drawable/button_style"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
